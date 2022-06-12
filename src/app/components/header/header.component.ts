@@ -12,4 +12,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     // run code when the page is done loading
   }
+
+  addTask() {
+    console.log('The button has been pressed');
+  }
 }
