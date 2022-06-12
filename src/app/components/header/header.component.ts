@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  title = 'This is header title';
+  title: string = 'This is header';
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // run code when the page is done loading
+  }
 }
