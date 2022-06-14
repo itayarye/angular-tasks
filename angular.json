@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "angular-taks"
+  "defaultProject": "angular-taks",
+  "cli": {
+    "analytics": false
+  }
 }
