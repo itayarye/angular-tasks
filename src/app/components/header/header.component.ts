@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  title: string = 'This is header';
+  title: string = 'Task Management';
   constructor() {}
 
   ngOnInit(): void {
