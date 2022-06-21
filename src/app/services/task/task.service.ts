@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { TASKS } from '../mock-tasks';
-import { Task } from '../Task';
+import { TASKS } from '../../mock-tasks';
+import { Task } from '../../Task';
 
 @Injectable({
   providedIn: 'root',
@@ -17,7 +17,7 @@ export class TaskService {
   }
 
   deleteTask(task: Task): Observable<boolean> {
-    const deleteUrl = `${this.apiUrl}/${task.id}`;
+    const deleteUrl = `${this.apiUrl}/5`;
     return this.http.delete<boolean>(deleteUrl);
   }
 }
