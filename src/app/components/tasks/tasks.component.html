@@ -1,4 +1,4 @@
-<app-task-item *ngFor="let task of tasks" [mytask]="task" (callBackDelete)="onDelete(task)"></app-task-item>
+<app-task-item *ngFor="let task of tasks" [mytask]="task" (callBackDelete)="onDelete(task)" (callBackToogleReminder)="onToggleReminder(task)"></app-task-item>
 <!--<app-task-item [mytask]="tasks[0]"></app-task-item>-->
 
 

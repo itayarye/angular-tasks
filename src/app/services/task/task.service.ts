@@ -17,7 +17,12 @@ export class TaskService {
   }
 
   deleteTask(task: Task): Observable<boolean> {
-    const deleteUrl = `${this.apiUrl}/5`;
+    const deleteUrl = `${this.apiUrl}/${task.id}`;
     return this.http.delete<boolean>(deleteUrl);
+  }
+
+  toggleReminder(task: Task): Observable<void> {
+    const toggleReminderUrl = `${this.apiUrl}`;
+    return this.http.put<void>(toggleReminderUrl, task);
   }
 }
