@@ -1,4 +1,13 @@
+<div class="about-wrapper">
 <p>About Page</p>
 <p>
     <a routerLink="/">Go To Homepage</a>
 </p>
+<p>
+    <input #clientInputString (focusout)="clickFocusOut($event)"/>
+
+</p>
+<div>
+    <button type="button" (click)="clearText()" class="clear-text">Clear Text</button>
+</div>
+</div>
