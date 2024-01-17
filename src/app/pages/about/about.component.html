@@ -1,13 +1,11 @@
-<div class="about-wrapper">
-<p>About Page</p>
-<p>
-    <a routerLink="/">Go To Homepage</a>
-</p>
-<p>
-    <input #clientInputString (focusout)="clickFocusOut($event)"/>
+<div class="about-wrapper" tabindex="0"><!-- tab index for safari relatedTarget-->
+    <p>About Page</p>
+    <p>
+        <a routerLink="/">Go To Homepage</a>
+    </p>
+    <p>
+        <input #clientInputString (focusout)="clickFocusOut($event)" />
 
-</p>
-<div>
-    <button type="button" (click)="clearText()" class="clear-text">Clear Text</button>
-</div>
+    </p>
+        <button type="button" (click)="clearText()" class="clear-text">Clear Text</button>
 </div>
